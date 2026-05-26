@@ -20,8 +20,6 @@ int main()
 			delete (g_authors.back());
 		g_authors.pop_back();
 	}
-
 	delete newBook;
-
 	return 0;
 }
