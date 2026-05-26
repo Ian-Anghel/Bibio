@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Author::Author(string s, string n, int yearOfBirth)
+Author::Author(const string& s, const string& n, const int yearOfBirth)
 {
 	m_surname = s;
 	m_name = n;
@@ -19,7 +19,7 @@ Author::~Author()
 	PrintName();
 }
 
-void Author::PrintName()
+void Author::PrintName() const
 {
-	cout << m_surname << " " << m_name << endl;
+	 cout << m_surname << " " << m_name << endl;
 }
